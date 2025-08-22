@@ -26,9 +26,13 @@ export default function Home() {
     sobrenome: 'Sol'
   };
 
-  return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <h1 className="text-4x1 font-bold">{obterSaudacao(null)}</h1>
+  return(
+    <div id="principal" className="min-h-screen flex items-center justify-center bg-black">
+      <div id="componente-azul" className="card-azul">
+        <h1 id="nome" className="text-2xl font-bold text-center">
+            {obterSaudacao(morador)}
+        </h1>
+        </div>
     </div>
   );
 }

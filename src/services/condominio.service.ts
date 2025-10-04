@@ -1,24 +1,21 @@
-import { createClient } from "@/utils/supabase/server";
+import { createClient } from "../utils/supabase/client";
 
 export interface ICondominio {
     id_condominio: number;
     id_administradora: number;
     nome_condominio: string;
-    tipo_condominio: string;
     endereco_condominio: string;
     cidade_condominio: string;
     uf_condominio: string;
+    tipo_condominio: string;
     created_at: string;
-    
 }
 
-export async function getCondominios(){
-    const supabase = await createClient();
-    const {data, error} = await supabase
-    .from("condominio")
-    .select("*")
-    .order("id_condominio"); 
+export async function getCondominios() {
 
-    if(error)throw new Error(error.message);
-    return data ??[];
+
+    const supabase = await createClient();
+    const { data, error } = await supabase.from("condominio").select("*").order("id_condominio");
+    if (error) throw new Error(error.message);
+    return data ?? [];
 }

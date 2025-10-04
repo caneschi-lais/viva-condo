@@ -21,11 +21,11 @@ export default function ListaMoradores() {
                         </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200 bg-white">
-                            <tr>
-                                <td className="px-4 py-3 text-sm text-gray-700" colSpan={6}>
-                                    Nenhum morador encontrado.
-                                </td>
-                            </tr>
+                        <tr>
+                            <td className="px-4 py-3 text-sm text-gray-700" colSpan={6}>
+                                Nenhum morador encontrado.
+                            </td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

@@ -4,7 +4,7 @@ export default function ListaMoradores() {
     return(
         <div className="p-6 max-w-full">
             <div className="mb-4 flex items-center justify-between gap-4">
-                <h1 className="text-x1 font-semibold">Usuários</h1>
+                <h1 className="text-xl font-semibold text-black">Usuários</h1>
             </div>
         
 

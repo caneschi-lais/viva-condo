@@ -29,7 +29,7 @@ export default function ListaCondominios() {
     return (
         <div className="p-6 max-w-full">
             <div className="mb-4 flex items-center justify-between gap-4">
-                <h1 className="text-xl font-semibold">Condomínios</h1>
+                <h1 className="text-xl font-semibold text-black">Condomínios</h1>
             </div>
 
             <div className="bg-white rounded-md border border-gray-200 overflow-hidden">

@@ -28,7 +28,7 @@ export default async function RootLayout({
           // SE ESTÁ LOGADO: Mostra o menu e o conteúdo (que será uma página protegida)
 <div className="flex">
 <MenuLateral />
-<main className="flex-1 ml-64 bg-gray-50 min-h-screen">{children}</main>
+<main className="flex-1 ml-18 bg-gray-50 min-h-screen">{children}</main>
 </div>
         ) : (
           // SE NÃO ESTÁ LOGADO: Mostra apenas o conteúdo (que será a página de login)

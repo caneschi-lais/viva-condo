@@ -12,10 +12,8 @@ export interface ICondominio {
 }
 
 export async function getCondominios() {
-
-
     const supabase = await createClient();
-    const { data, error } = await supabase.from("condominio").select("*").order("id_condominio");
+    const { data, error } = await supabase.from("Condominio").select("*").order("id");
     if (error) throw new Error(error.message);
     return data ?? [];
 }

@@ -29,7 +29,7 @@ export default function LoginPage() {
           setError("Erro inesperado. Tente novamente.");
         }
       } else {
-        window.location.href = "/condominios";
+        window.location.href = "/condominios/novo";
       }
     } catch (err) {
       setError("Erro inesperado. Tente novamente.");
